@@ -148,6 +148,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 32px;
 }
 
 .filter_group-dev,
@@ -170,10 +171,10 @@ body {
   background: #242B35;
   color: #B6B4C6;
   padding: 8px;
-  border: none;
   border-radius: 7px;
   width: 200px;
   outline: none;
+  border: 1px solid #3D444E;
 }
 
 .filter_group-checkbox,
@@ -210,4 +211,54 @@ body {
   color: #fff;
   background: #8F7FFF;
   margin-right: 24px;
+}
+
+.content_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content_box .block {
+  background: #242B35;
+  border: 1px solid #3D444E;
+  border-radius: 7px;
+  padding: 40px 64px;
+  max-width: 650px;
+}
+
+.content_box .block .title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.content_box .block .block-items {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.content_box .block .block-items .info-title {
+  color: #C7BFFF;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-right: 45px;
+}
+
+.content_box .block .block-items .info-title_cash {
+  color: green;
+  margin-left: 65px;
+}
+
+.content_box .block .block-items .info-title_tag {
+  color: #fff;
+  background: #8F7FFF;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 3px 12px 3px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }

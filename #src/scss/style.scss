@@ -74,6 +74,7 @@ body {
 
 .nav_items {
    display: flex;
+
    >.nav_item {
       >.link_active{
          background: rgba(143, 127, 255, 0.15);
@@ -132,6 +133,7 @@ body {
 
 .filter_group {
    display: flex;
+   margin-bottom: 32px;
 
    &-dev,
    &-status {
@@ -150,10 +152,10 @@ body {
          background: $box_bg;
          color: $text_color;
          padding: 8px;
-         border: none;
          border-radius: 7px;
          width: 200px;
-         outline: none
+         outline: none;
+         border: 1px solid #3D444E;
       }
    }
 
@@ -189,6 +191,51 @@ body {
             color: #fff;
             background: $active_color;
             margin-right: 24px;
+         }
+      }
+   }
+}
+
+.content_box {
+   display: flex;
+   flex-wrap: wrap;
+
+   .block {
+      background: $box_bg;
+      border: 1px solid #3D444E;
+      border-radius: 7px;
+      padding: 40px 64px;
+      max-width: 650px;
+
+      .title {
+         text-align: center;
+         color: #fff;
+         margin-bottom: 24px;
+      }
+
+      .block-items {
+         font-size: 14px;
+         line-height: 21px;
+         font-weight: 400;
+
+         .info-title {
+            color: $subtitle_color;
+            font-weight: 600;
+            margin-bottom: 16px;
+            margin-right: 45px;
+            &_cash {
+               color: green;
+               margin-left: 65px;
+            }
+            &_tag {
+               color: #fff;
+               background: $active_color;
+               font-size: 12px;
+               line-height: 18px;
+               padding: 3px 12px 3px 20px;
+               border-top-left-radius: 20px;
+               border-bottom-left-radius: 20px;
+            }
          }
       }
    }
