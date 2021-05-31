@@ -126,14 +126,15 @@ function fonts() {
       .pipe(dest(path.build.fonts));
 }
 
-gulp.task('svgsprite', function () {
-   return gulp.src([source_folder + '/iconsprite/*.svg'])
+gulp.task('svgSprite', function () {
+   return gulp.src([source_folder + '/img/iconsprite/*.svg'])
       .pipe(svgSprite({
          mode: {
             stack: {
-               sprite: "../icons/icons.svg"
+               sprite: "../icons/icons.svg",
+               example: true
             }
-         }
+         },
       }))
       .pipe(dest(path.build.img))
 })

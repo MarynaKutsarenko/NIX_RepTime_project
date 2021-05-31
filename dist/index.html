@@ -10,19 +10,79 @@
 <body>
    <header class="header">
    <div class="container">
-      <h1>Hello </h1>
-      <p>lorem</p>
-      <ul>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-      </ul>
+      <div class="header_wrapp">
+         <div class="logo">
+            <a href="#" class="link_logo">
+               <img src="/img/logo.svg" alt="logo: reporting time" class="logo_img" />
+            </a>
+         </div>
+         <nav class="header_nav">
+            <ul class="nav_items">
+               <li class="nav-item item-Summary">
+                  <a href="#" class="nav-item_link">Summary</a>
+               </li>
+               <li class="nav-item item-Hours">
+                  <a href="#" class="nav-item_link">Hours</a>
+               </li>
+               <li class="nav-item item-Projects">
+                  <a href="#" class="nav-item_link link_active">Projects</a>
+               </li>
+               <li class="nav-item item-Time">
+                  <a href="#" class="nav-item_link">Time reports</a>
+               </li>
+               <li class="nav-item item-Confirm">
+                  <a href="#" class="nav-item_link">Confirmation</a>
+               </li>
+               <li class="nav-item item-Mail">
+                  <a href="#" class="nav-item_link">Mailer</a>
+               </li>
+               <li class="nav-item item-Compare">
+                  <a href="#" class="nav-item_link">Compare</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="header_avatar">
+            <img src="/img/avatar.svg" alt="" class="avatar-image" />
+         </div>
+      </div>
    </div>
 </header>
    <section class="section">
+   <div class="container">
+      <div class="wrapp-content">
+         <div class="filter_group">
+            <div class="filter_group-dev">
+               <h4 class="title-sm">Dev</h4>
+               <select  id="sel-dev">
+                  <option value="Jenny">Jenny Wilson</option>
+                  <option value="Jenny">Jenny Wilson-2</option>
+                  <option value="Jenny">Jenny Wilson-3</option>
+               </select>
+            </div>
+            <div class="filter_group-status">
+               <h4 class="title-sm">Status</h4>
+               <select  id="sel-dev">
+                  <option value="Jenny">All Statuses</option>
+                  <option value="Jenny">in Progresss</option>
+                  <option value="Jenny">Done</option>
+               </select>
+            </div>
+            <div class="filter_group-checkbox">
+               <input type="checkbox" id="checkG" class="filter-checkbox">
+               <label for="checkG" class="filter-checkbox_l">Show Efficiency</label>
+            </div>
+            <div class="filter_group-buttons">
+               <button class="btn btn_active">Apply</button>
+               <button class="btn">Reset Filters</button>
+            </div>
+         </div>
+         <div class="content_block">
 
-   </section>
+         </div>
+      </div>
+   </div>
+</section>
+
 
    <script src="js/main.min.js"></script>
 </body>
