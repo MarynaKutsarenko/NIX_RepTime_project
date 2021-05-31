@@ -132,6 +132,7 @@ body {
 
 .filter_group {
    display: flex;
+
    &-dev,
    &-status {
       font-weight: 600;
@@ -140,5 +141,55 @@ body {
       color: #C7BFFF;
       margin-bottom: 8px;
       margin-right: 24px;
+
+      >.title-sm {
+         margin-bottom: 8px;
+      }
+
+      >select {
+         background: $box_bg;
+         color: $text_color;
+         padding: 8px;
+         border: none;
+         border-radius: 7px;
+         width: 200px;
+         outline: none
+      }
+   }
+
+   &-checkbox,
+   &-buttons {
+      margin-top: auto;
+   }
+   &-checkbox {
+      margin-right: 24px;
+
+      &.filter-checkbox_l {
+         font-size: 14px;
+         line-height: 21px;
+         color: #B6B4C6;
+      }
+   }
+   &-buttons {
+      >.btn {
+         border: 1px solid #8F7FFF;
+         border-radius: 7px;
+         padding: 8px 28px;
+         font-size: 14px;
+         line-height: 21px;
+         cursor: pointer;
+         background: inherit;
+         color: $active_color;
+         -webkit-border-radius: 7px;
+         -moz-border-radius: 7px;
+         -ms-border-radius: 7px;
+         -o-border-radius: 7px;
+
+         &.btn_active {
+            color: #fff;
+            background: $active_color;
+            margin-right: 24px;
+         }
+      }
    }
 }

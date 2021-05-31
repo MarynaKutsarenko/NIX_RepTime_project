@@ -159,3 +159,55 @@ body {
   margin-bottom: 8px;
   margin-right: 24px;
 }
+
+.filter_group-dev > .title-sm,
+.filter_group-status > .title-sm {
+  margin-bottom: 8px;
+}
+
+.filter_group-dev > select,
+.filter_group-status > select {
+  background: #242B35;
+  color: #B6B4C6;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  width: 200px;
+  outline: none;
+}
+
+.filter_group-checkbox,
+.filter_group-buttons {
+  margin-top: auto;
+}
+
+.filter_group-checkbox {
+  margin-right: 24px;
+}
+
+.filter_group-checkbox.filter-checkbox_l {
+  font-size: 14px;
+  line-height: 21px;
+  color: #B6B4C6;
+}
+
+.filter_group-buttons > .btn {
+  border: 1px solid #8F7FFF;
+  border-radius: 7px;
+  padding: 8px 28px;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+  background: inherit;
+  color: #8F7FFF;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.filter_group-buttons > .btn.btn_active {
+  color: #fff;
+  background: #8F7FFF;
+  margin-right: 24px;
+}
