@@ -1,6 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;
+@font-face {
+  font-family: 'open-sans';
+  src: url("/fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
 
-600;800&display=swap");
+@font-face {
+  font-family: 'open-sans';
+  src: url("/fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url("/fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 800;
+}
+
 *,
 *::before,
 *::after {
@@ -48,14 +63,14 @@ img {
   display: block;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1340px;
-}
-
 body {
   background: #171E28;
   color: #B6B4C6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1340px;
 }
 
 .header {
@@ -222,11 +237,26 @@ body {
 }
 
 .content_box .block {
+  position: relative;
   background: #242B35;
   border: 1px solid #3D444E;
   border-radius: 7px;
   padding: 40px 64px;
   max-width: 650px;
+}
+
+.content_box .block::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  top: 85px;
+  width: 8px;
+  height: 60%;
+  background: -o-linear-gradient(99.55deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .content_box .block .title {
@@ -244,8 +274,9 @@ body {
 .content_box .block .block-items .info-title {
   color: #C7BFFF;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   margin-right: 45px;
+  display: inline-block;
 }
 
 .content_box .block .block-items .info-title_cash {
@@ -253,7 +284,7 @@ body {
   margin-left: 65px;
 }
 
-.content_box .block .block-items .info-title_tag {
+.content_box .block .block-items .info-title_label {
   color: #fff;
   background: #8F7FFF;
   font-size: 12px;
@@ -261,4 +292,24 @@ body {
   padding: 3px 12px 3px 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  margin-left: 60px;
+}
+
+.content_box .block .block-items .info-title_tag {
+  border: 1px solid #6F68C6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  padding: 3px 7px;
+  margin-left: 70px;
+}
+
+.content_box .block .block-items .info-title_status {
+  color: #FF6A59;
+  margin-left: 60px;
+}
+
+.content_box .block .block-items .info-title_team {
+  display: inline-block;
+  width: 365px;
 }
