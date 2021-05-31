@@ -72,9 +72,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav_items {
@@ -83,57 +83,57 @@ body {
   display: flex;
 }
 
-.nav_items > .nav_item > .link_active {
+.nav_items .nav_item .link_active {
   background: rgba(143, 127, 255, 0.15);
   border-radius: 0px 0px 2px 2px;
 }
 
-.nav_items > .nav-item:not(:last-child) {
+.nav_items .nav-item:not(:last-child) {
   margin-right: 44px;
   padding-left: 25px;
 }
 
-.nav_items > .item-Summary {
+.nav_items .item-Summary {
   background-image: url("/img/icons/icons.svg#summary");
   background-repeat: no-repeat;
   background-size: 24px;
 }
 
-.nav_items > .item-Hours {
+.nav_items .item-Hours {
   background-image: url("/img/icons/icons.svg#time-reports");
   background-repeat: no-repeat;
   background-size: 24px;
 }
 
-.nav_items > .item-Projects {
+.nav_items .item-Projects {
   background-image: url("/img/icons/icons.svg#projects");
   background-repeat: no-repeat;
   background-size: 24px;
 }
 
-.nav_items > .item-Projects > .link_active {
+.nav_items .item-Projects > .link_active {
   color: #8F7FFF;
 }
 
-.nav_items > .item-Time {
+.nav_items .item-Time {
   background-image: url("/img/icons/icons.svg#hours");
   background-repeat: no-repeat;
   background-size: 24px;
 }
 
-.nav_items > .item-Confirm {
+.nav_items .item-Confirm {
   background-image: url("/img/icons/icons.svg#confirmation");
   background-repeat: no-repeat;
   background-size: 24px;
 }
 
-.nav_items > .item-Mail {
+.nav_items .item-Mail {
   background-image: url("/img/icons/icons.svg#mailer");
   background-repeat: no-repeat;
   background-size: 24px;
 }
 
-.nav_items > .item-Compare {
+.nav_items .item-Compare {
   background-image: url("/img/icons/icons.svg#compare");
   background-repeat: no-repeat;
   background-size: 24px;
@@ -161,13 +161,13 @@ body {
   margin-right: 24px;
 }
 
-.filter_group-dev > .title-sm,
-.filter_group-status > .title-sm {
+.filter_group-dev .title-sm,
+.filter_group-status .title-sm {
   margin-bottom: 8px;
 }
 
-.filter_group-dev > select,
-.filter_group-status > select {
+.filter_group-dev select,
+.filter_group-status select {
   background: #242B35;
   color: #B6B4C6;
   padding: 8px;
@@ -192,7 +192,7 @@ body {
   color: #B6B4C6;
 }
 
-.filter_group-buttons > .btn {
+.filter_group-buttons .btn {
   border: 1px solid #8F7FFF;
   border-radius: 7px;
   padding: 8px 28px;
@@ -207,7 +207,7 @@ body {
   -o-border-radius: 7px;
 }
 
-.filter_group-buttons > .btn.btn_active {
+.filter_group-buttons .btn.btn_active {
   color: #fff;
   background: #8F7FFF;
   margin-right: 24px;

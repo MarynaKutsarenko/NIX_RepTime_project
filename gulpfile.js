@@ -126,7 +126,7 @@ function fonts() {
       .pipe(dest(path.build.fonts));
 }
 
-gulp.task('svgSprite', function () {
+function svgsprite() {
    return gulp.src([source_folder + '/img/iconsprite/*.svg'])
       .pipe(svgSprite({
          mode: {
@@ -137,7 +137,7 @@ gulp.task('svgSprite', function () {
          },
       }))
       .pipe(dest(path.build.img))
-})
+}
 
 function watchFiles() {
    gulp.watch([path.watch.html], html);
@@ -150,10 +150,11 @@ function clean() {
    return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, svgsprite));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 
+exports.svgsprite = svgsprite;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;

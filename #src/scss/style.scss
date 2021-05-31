@@ -68,34 +68,34 @@ body {
    &_wrapp{
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
    }
 }
 
 .nav_items {
    display: flex;
 
-   >.nav_item {
-      >.link_active{
+   .nav_item {
+      .link_active{
          background: rgba(143, 127, 255, 0.15);
          border-radius: 0px 0px 2px 2px;
       }
    }
-   >.nav-item:not(:last-child) {
+   .nav-item:not(:last-child) {
       margin-right: 44px;
       padding-left: 25px;
    }
-   >.item-Summary {
+   .item-Summary {
       background-image: url("/img/icons/icons.svg#summary");
       background-repeat: no-repeat;
       background-size: 24px;
    }
-   >.item-Hours {
+   .item-Hours {
       background-image: url("/img/icons/icons.svg#time-reports");
       background-repeat: no-repeat;
       background-size: 24px;
    }
-   >.item-Projects {
+   .item-Projects {
       background-image: url("/img/icons/icons.svg#projects");
       background-repeat: no-repeat;
       background-size: 24px;
@@ -103,22 +103,22 @@ body {
             color: $active_color;
          }
    }
-   >.item-Time {
+   .item-Time {
       background-image: url("/img/icons/icons.svg#hours");
       background-repeat: no-repeat;
       background-size: 24px;
    }
-   >.item-Confirm {
+   .item-Confirm {
       background-image: url("/img/icons/icons.svg#confirmation");
       background-repeat: no-repeat;
       background-size: 24px;
    }
-   >.item-Mail {
+   .item-Mail {
       background-image: url("/img/icons/icons.svg#mailer");
       background-repeat: no-repeat;
       background-size: 24px;
    }
-   >.item-Compare {
+   .item-Compare {
       background-image: url("/img/icons/icons.svg#compare");
       background-repeat: no-repeat;
       background-size: 24px;
@@ -144,11 +144,11 @@ body {
       margin-bottom: 8px;
       margin-right: 24px;
 
-      >.title-sm {
+      .title-sm {
          margin-bottom: 8px;
       }
 
-      >select {
+      select {
          background: $box_bg;
          color: $text_color;
          padding: 8px;
@@ -173,7 +173,7 @@ body {
       }
    }
    &-buttons {
-      >.btn {
+      .btn {
          border: 1px solid #8F7FFF;
          border-radius: 7px;
          padding: 8px 28px;
