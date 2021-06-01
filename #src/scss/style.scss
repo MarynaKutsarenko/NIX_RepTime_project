@@ -1,5 +1,6 @@
-@import "font";
 @import "reset";
+@import "font";
+
 
 
 
@@ -14,6 +15,7 @@ body {
    background: $main_bg;
    color: $text_color;
 }
+
 .container {
    margin: 0 auto;
    max-width: 1340px;
@@ -22,8 +24,10 @@ body {
 .header {
    background: $box_bg;
    border: 1px solid #3D444E;
-   padding-bottom: 16px;padding-top: 16px;
-   &_wrapp{
+   padding-bottom: 16px;
+   padding-top: 16px;
+
+   &_wrapp {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -34,48 +38,58 @@ body {
    display: flex;
 
    .nav_item {
-      .link_active{
+      .link_active {
          background: rgba(143, 127, 255, 0.15);
          border-radius: 0px 0px 2px 2px;
+         padding: 20px;
       }
    }
+
    .nav-item:not(:last-child) {
       margin-right: 44px;
       padding-left: 25px;
    }
+
    .item-Summary {
       background-image: url("/img/icons/icons.svg#summary");
       background-repeat: no-repeat;
       background-size: 24px;
    }
+
    .item-Hours {
       background-image: url("/img/icons/icons.svg#time-reports");
       background-repeat: no-repeat;
       background-size: 24px;
    }
+
    .item-Projects {
       background-image: url("/img/icons/icons.svg#projects");
       background-repeat: no-repeat;
       background-size: 24px;
-         >.link_active {
-            color: $active_color;
-         }
+
+      >.link_active {
+         color: $active_color;
+      }
    }
+
    .item-Time {
       background-image: url("/img/icons/icons.svg#hours");
       background-repeat: no-repeat;
       background-size: 24px;
    }
+
    .item-Confirm {
       background-image: url("/img/icons/icons.svg#confirmation");
       background-repeat: no-repeat;
       background-size: 24px;
    }
+
    .item-Mail {
       background-image: url("/img/icons/icons.svg#mailer");
       background-repeat: no-repeat;
       background-size: 24px;
    }
+
    .item-Compare {
       background-image: url("/img/icons/icons.svg#compare");
       background-repeat: no-repeat;
@@ -85,7 +99,7 @@ body {
 
 }
 
-.wrapp-content { 
+.wrapp-content {
    padding-top: 40px;
 }
 
@@ -121,6 +135,7 @@ body {
    &-buttons {
       margin-top: auto;
    }
+
    &-checkbox {
       margin-right: 24px;
 
@@ -130,6 +145,7 @@ body {
          color: #B6B4C6;
       }
    }
+
    &-buttons {
       .btn {
          border: 1px solid #8F7FFF;
@@ -171,9 +187,9 @@ body {
          position: absolute;
          left: 0;
          top: 0;
-         top: 85px;
+         top: 25%;
          width: 8px;
-         height: 60%;
+         height: 50%;
          background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
          border-top-right-radius: 7px;
          border-bottom-right-radius: 7px;
@@ -185,21 +201,20 @@ body {
          margin-bottom: 24px;
       }
 
-      .block-items {
+      .info_wrapper {
+         display: flex;
          font-size: 14px;
          line-height: 21px;
-         font-weight: 400;
 
-         .info-title {
+         &-first {
             color: $subtitle_color;
             font-weight: 600;
-            margin-bottom: 10px;
-            margin-right: 45px;
-            display: inline-block;
+            margin-right: 75px;
+         }
 
+         &-second {
             &_cash {
                color: green;
-               margin-left: 65px;
             }
 
             &_label {
@@ -208,28 +223,25 @@ body {
                font-size: 12px;
                line-height: 18px;
                padding: 3px 12px 3px 20px;
-               border-top-left-radius: 20px;
-               border-bottom-left-radius: 20px;
-               margin-left: 60px;
+               border-top-left-radius: 70px;
+               border-bottom-left-radius: 70px;
+               display: inline-block;
             }
 
             &_tag {
                border: 1px solid #6F68C6;
-               box-sizing: border-box;
                border-radius: 15px;
                padding: 3px 7px;
-               margin-left: 70px;
+               width: 110px
             }
 
             &_status {
                color: #FF6A59;
-               margin-left: 60px;
             }
+         }
 
-            &_team {
-               display: inline-block;
-               width: 365px;
-            }
+         li {
+            margin-bottom: 16px;
          }
       }
    }
