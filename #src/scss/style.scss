@@ -181,7 +181,7 @@ body {
       border: 1px solid #3D444E;
       border-radius: 7px;
       padding: 40px 64px;
-      max-width: 650px;
+
 
       &::after {
          content: '';
@@ -189,15 +189,11 @@ body {
          left: 0;
          top: 0;
          top: 25%;
-         width: 8px;
+         width: 7px;
          height: 50%;
          background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
          border-top-right-radius: 7px;
          border-bottom-right-radius: 7px;
-      }
-
-      &_information {
-         margin-right: 20px;
       }
 
       .title {
@@ -206,49 +202,57 @@ body {
          margin-bottom: 24px;
       }
 
-      .info_wrapper {
-         display: flex;
-         font-size: 14px;
-         line-height: 21px;
+      &_information {
+         margin-right: 20px;
+         margin-bottom: 24px;
+         max-width: 49%;
 
-         &-first {
-            color: $subtitle_color;
-            font-weight: 600;
-            margin-right: 75px;
+         .info_wrapper {
+            display: flex;
+            font-size: 14px;
+            line-height: 21px;
+
+            &-first {
+               color: $subtitle_color;
+               font-weight: 600;
+               margin-right: 75px;
+            }
+
+            &-second {
+               &_cash {
+                  color: green;
+                  font-size: 20px;
+               }
+
+               &_label {
+                  color: #fff;
+                  background: $active_color;
+                  font-size: 12px;
+                  line-height: 18px;
+                  padding: 3px 12px 3px 20px;
+                  border-top-left-radius: 70px;
+                  border-bottom-left-radius: 70px;
+                  display: inline-block;
+               }
+
+               &_tag {
+                  border: 1px solid #6F68C6;
+                  border-radius: 15px;
+                  padding: 3px 7px;
+                  width: 110px
+               }
+
+               &_status {
+                  color: #FF6A59;
+               }
+            }
+
          }
-
-         &-second {
-            &_cash {
-               color: green;
-               font-size: 20px;
-            }
-
-            &_label {
-               color: #fff;
-               background: $active_color;
-               font-size: 12px;
-               line-height: 18px;
-               padding: 3px 12px 3px 20px;
-               border-top-left-radius: 70px;
-               border-bottom-left-radius: 70px;
-               display: inline-block;
-            }
-
-            &_tag {
-               border: 1px solid #6F68C6;
-               border-radius: 15px;
-               padding: 3px 7px;
-               width: 110px
-            }
-
-            &_status {
-               color: #FF6A59;
-            }
-         }
-
       }
 
       &_time {
+         margin-bottom: 24px;
+         max-width: 49%;
 
          .time_wrapper {
             display: flex;
@@ -273,7 +277,10 @@ body {
                flex-direction: column;
                width: 240px;
                margin-right: 40px;
+            }
 
+            &-estimations {
+               width: 240px;
             }
 
             li:not(:last-child) {
@@ -288,8 +295,50 @@ body {
          }
       }
 
+      &_efficiency {
+         flex-grow: 1;
+         margin-bottom: 40px;
+
+         .efficiency-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+            .efficiency_wrapper-total {
+               width: 49%;
+               margin-right: 20px;
+            }
+
+            .efficiency_wrapper-efficiency {
+               width: 49%;
+            }
+
+            .right {
+               float: right;
+            }
+
+            .middle {
+               margin-left: 40%;
+            }
+
+            .middleN {
+               margin-left: 38%;
+            }
+         }
+
+         li:not(:last-child) {
+            border-bottom: 1px solid #3D444E;
+         }
+
+         .list_title {
+            color: $subtitle_color;
+            border-bottom: none !important;
+         }
+      }
+
       li {
          margin-bottom: 16px;
       }
+
+
    }
 }
