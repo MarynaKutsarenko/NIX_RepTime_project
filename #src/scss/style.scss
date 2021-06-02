@@ -140,10 +140,62 @@ body {
    &-checkbox {
       margin-right: 24px;
 
-      &.filter-checkbox_l {
+      .filter-checkbox {
+         display: none;
+      }
+
+      &_l {
          font-size: 14px;
          line-height: 21px;
          color: #B6B4C6;
+      }
+
+      .ckeckboxFake {
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         position: relative;
+         border: 1px solid #3D444E;
+         margin-right: 12px;
+         border-radius: 3px;
+         -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+         -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+      }
+
+      .ckeckboxFake::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+         display: block;
+         height: 20px;
+         width: 20px;
+         background-color: $active_color;
+         background-image: url("/img/arrow.svg");
+         background-repeat: no-repeat;
+         background-position: center;
+         opacity: 0;
+         transition: 0.2s;
+         -webkit-transition: 0.2s;
+         -moz-transition: 0.2s;
+         -ms-transition: 0.2s;
+         -o-transition: 0.2s;
+         border-radius: 3px;
+         -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+         -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+      }
+
+      .filter-checkbox:checked+.ckeckboxFake::before {
+         opacity: 1;
       }
    }
 
@@ -253,6 +305,7 @@ body {
       &_time {
          margin-bottom: 24px;
          max-width: 49%;
+         height: auto;
 
          .time_wrapper {
             display: flex;
@@ -304,12 +357,14 @@ body {
             flex-wrap: wrap;
 
             .efficiency_wrapper-total {
-               width: 49%;
+               max-width: 49%;
                margin-right: 20px;
+               flex-grow: 1;
             }
 
             .efficiency_wrapper-efficiency {
-               width: 49%;
+               max-width: 49%;
+               flex-grow: 1;
             }
 
             .right {

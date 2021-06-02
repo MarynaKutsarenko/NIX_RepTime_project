@@ -28,7 +28,7 @@
                   <a href="#" class="nav-item_link link_active">Projects</a>
                </li>
                <li class="nav-item item-Time">
-                  <a href="#" class="nav-item_link">Time reports</a>
+                  <a href="#" class="nav-item_link">Time&nbsp;reports</a>
                </li>
                <li class="nav-item item-Confirm">
                   <a href="#" class="nav-item_link">Confirmation</a>
@@ -54,9 +54,9 @@
             <div class="filter_group-dev">
                <h4 class="title-sm">Dev</h4>
                <select  id="sel-dev">
-                  <option value="Jenny">Jenny Wilson</option>
-                  <option value="Jenny">Jenny Wilson-2</option>
-                  <option value="Jenny">Jenny Wilson-3</option>
+                  <option value="1">Jenny Wilson</option>
+                  <option value="2">Jenny Wilson-2</option>
+                  <option value="3">Jenny Wilson-3</option>
                </select>
             </div>
             <div class="filter_group-status">
@@ -68,8 +68,11 @@
                </select>
             </div>
             <div class="filter_group-checkbox">
-               <input type="checkbox" id="checkG" class="filter-checkbox">
-               <label for="checkG" class="filter-checkbox_l">Show Efficiency</label>
+               <label class="filter-checkbox_l">
+                  <input type="checkbox" class="filter-checkbox" checked>
+                  <span class="ckeckboxFake"></span>
+                  Show Efficiency
+               </label>
             </div>
             <div class="filter_group-buttons">
                <button class="btn btn_active">Apply</button>
@@ -130,23 +133,26 @@
                      <li>Sum<span class="right">15236.48h</span></li>
                   </ul>
 
-                  <ul class="time_wrapper-hours">
-                     <li class="list_title">Time (Hours) by Current Month (Sep)</li>
-                     <li>Changes<span class="right">0h</span></li>
-                     <li>Origin<span class="right">2067.26h</span>
-                        <ul class="inner_list">
-                           <li>Programming<span class="right">1660.55h</span></li>
-                        </ul>
-                     </li>
-                     <li>Sum<span class="right">15236.48h</span></li>
-                  </ul>
+                  <div class="wrap-items">
+                     <ul class="time_wrapper-hours">
+                        <li class="list_title">Time (Hours) by Current Month (Sep)</li>
+                        <li>Changes<span class="right">0h</span></li>
+                        <li>Origin<span class="right">2067.26h</span>
+                           <ul class="inner_list">
+                              <li>Programming<span class="right">1660.55h</span></li>
+                           </ul>
+                        </li>
+                        <li>Sum<span class="right">15236.48h</span></li>
+                     </ul>
 
-                  <ul class="time_wrapper-estimations">
-                     <li class="list_title">Estimations (Hours)</li>
-                     <li>Changes<span class="right">0h</span></li>
-                     <li>Origin<span class="right">2067.26h</span></li>
-                     <li>Sum<span class="right">15236.48h</span></li>
-                  </ul>
+                     <ul class="time_wrapper-estimations">
+                        <li class="list_title">Estimations (Hours)</li>
+                        <li>Changes<span class="right">0h</span></li>
+                        <li>Origin<span class="right">2067.26h</span></li>
+                        <li>Sum<span class="right">15236.48h</span></li>
+                     </ul>
+                  </div>
+                  
                </div>
             </div>
 
