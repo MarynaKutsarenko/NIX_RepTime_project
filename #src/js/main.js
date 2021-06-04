@@ -1,4 +1,3 @@
-alert('hi');
 let checkbox = document.querySelector('.filter-checkbox');
 
 checkbox.addEventListener('change', function () {
