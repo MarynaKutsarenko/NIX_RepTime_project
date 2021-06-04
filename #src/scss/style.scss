@@ -1,15 +1,11 @@
 @import "reset";
 @import "font";
+@import "variables";
 
 
 
 
-$main_bg: #171E28;
-$box_bg: #242B35;
-$text_color: #B6B4C6;
-$title_color: #FFFFFF;
-$subtitle_color: #C7BFFF;
-$active_color: #8F7FFF;
+
 
 body {
    background: $main_bg;
@@ -23,7 +19,7 @@ body {
 
 .header {
    background: $box_bg;
-   border: 1px solid #3D444E;
+   border: $border;
    padding-bottom: 16px;
    padding-top: 16px;
 
@@ -41,7 +37,7 @@ body {
 
       .link_active {
          background: rgba(143, 127, 255, 0.15);
-         border-radius: 0px 0px 2px 2px;
+         border-radius: 0px 0px 2px 2px;  
          padding: 20px;
       }
    }
@@ -128,7 +124,7 @@ body {
          border-radius: 7px;
          width: 200px;
          outline: none;
-         border: 1px solid #3D444E;
+         border: $border;
       }
    }
 
@@ -305,7 +301,7 @@ body {
       &_time {
          margin-bottom: 24px;
          max-width: 49%;
-         height: auto;
+         // height: 700px;
 
          .time_wrapper {
             display: flex;
