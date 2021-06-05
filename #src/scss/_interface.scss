@@ -7,18 +7,33 @@ body {
    background: $box_bg;
    border-bottom: $border;
    height: 68px;
+
+   @media (max-width: 1138px) {
+      height: 127px;
+   }
+
+   @media (max-width: 768px) {
+      height: 68px;
+   }
 }
 
 .container {
    margin: 0 auto;
-   max-width: 1340px;
+   max-width: 1300px;
    padding-left: 1rem;
    padding-right: 1rem;
+
+   @media (max-width:830px) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+   }
 }
 
 .menu {
    position: relative;
    text-align: right;
+   float: right;
+
 
    &::after {
       content: "";
@@ -27,8 +42,40 @@ body {
       position: absolute;
       height: 68px;
       border: $border;
+
+      @media (max-width: 1140px) {
+         border: none;
+      }
+
+      @media (max-width: 768px) {
+         border: $border;
+         top: -50%;
+      }
+
+      @media (max-width: 476px) {
+         border: none;
+      }
+   }
+
+   @media (max-width: 1133px) {
+      float: left;
+   }
+
+   @media (max-width: 768px) {
+      margin-left: 40%;
+      padding-right: 30px;
+   }
+
+   @media (max-width: 680px) {
+      margin-left: 30%;
+   }
+
+   @media (max-width: 567px) {
+      margin-left: 20%;
+   }
+
+   @media (max-width: 476px) {
+      margin-left: 10%;
+      padding-right: 0;
    }
 }
-
-
-
