@@ -6,6 +6,7 @@ body {
 .header {
    background: $box_bg;
    border-bottom: $border;
+   height: 68px;
 }
 
 .container {
@@ -15,9 +16,19 @@ body {
    padding-right: 1rem;
 }
 
+.menu {
+   position: relative;
+   text-align: right;
 
-// .clearfix::after {
-//    content: "";
-//    display: block;
-//    clear: both;
-// }
+   &::after {
+      content: "";
+      bottom: -100%;
+      right: 0;
+      position: absolute;
+      height: 68px;
+      border: $border;
+   }
+}
+
+
+
