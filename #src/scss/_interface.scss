@@ -6,14 +6,18 @@ body {
 .header {
    background: $box_bg;
    border-bottom: $border;
-   padding-bottom: 16px;
-   padding-top: 16px;
 }
 
 .container {
    margin: 0 auto;
    max-width: 1340px;
-   padding-left: 10px;
-   padding-right: 10px;
+   padding-left: 1rem;
+   padding-right: 1rem;
 }
 
+
+// .clearfix::after {
+//    content: "";
+//    display: block;
+//    clear: both;
+// }

@@ -1,5 +1,5 @@
-let checkbox = document.querySelector('.filter-checkbox');
+// let checkbox = document.querySelector('.filter-checkbox');
 
-checkbox.addEventListener('change', function () {
-   !checkbox.checked ? blockEfficiency.style.display = 'none' : blockEfficiency.style.display = 'block';
-})
+// checkbox.addEventListener('change', function () {
+//    !checkbox.checked ? blockEfficiency.style.display = 'none' : blockEfficiency.style.display = 'block';
+// })

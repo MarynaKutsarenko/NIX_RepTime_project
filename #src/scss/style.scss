@@ -2,80 +2,12 @@
 @import "font";
 @import "variables";
 @import "interface";
+@import "header";
 
 
 
 
 
-// .nav_items {
-//    display: flex;
-
-//    .nav_item {
-
-//       .link_active {
-//          background: rgba(143, 127, 255, 0.15);
-//          border-radius: 0px 0px 2px 2px;  
-//          padding: 20px;
-//       }
-//    }
-
-//    .nav-item:not(:last-child) {
-//       margin-right: 44px;
-//       padding-left: 25px;
-//    }
-
-//    .item-Summary {
-//       background-image: url("/img/icons/icons.svg#summary");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-//    }
-
-//    .item-Hours {
-//       background-image: url("/img/icons/icons.svg#time-reports");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-//    }
-
-//    .item-Projects {
-//       background-image: url("/img/icons/icons.svg#projects");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-
-//       .link_active {
-//          color: $active_color;
-//       }
-//    }
-
-//    .item-Time {
-//       background-image: url("/img/icons/icons.svg#hours");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-//    }
-
-//    .item-Confirm {
-//       background-image: url("/img/icons/icons.svg#confirmation");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-//    }
-
-//    .item-Mail {
-//       background-image: url("/img/icons/icons.svg#mailer");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-//    }
-
-//    .item-Compare {
-//       background-image: url("/img/icons/icons.svg#compare");
-//       background-repeat: no-repeat;
-//       background-size: 24px;
-//       padding-left: 25px;
-//    }
-
-// }
-
-// .wrapp-content {
-//    padding-top: 40px;
-// }
 
 // .filter_group {
 //    display: flex;
