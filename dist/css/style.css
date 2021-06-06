@@ -406,7 +406,6 @@ body {
 }
 
 .block_size {
-  max-width: 648px;
   margin-bottom: 24px;
 }
 
@@ -422,7 +421,7 @@ body {
 
 .block_first {
   width: 49%;
-  margin-right: 24px;
+  margin-right: auto;
 }
 
 .block_items .block_item {
@@ -549,6 +548,12 @@ body {
   }
 }
 
+@media (max-width: 1233px) {
+  .block {
+    padding: 40px 34px;
+  }
+}
+
 @media (max-width: 1140px) {
   .menu::after {
     border: none;
@@ -570,6 +575,41 @@ body {
 @media (max-width: 1130px) {
   .menu_link {
     padding: 20px 30px 20px 25px;
+  }
+}
+
+@media (max-width: 988px) {
+  .block_body .items_title {
+    margin-right: 65px;
+  }
+}
+
+@media (max-width: 982px) {
+  .block {
+    padding: 40px 54px;
+  }
+
+  .content_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .block_first {
+    width: 99%;
+  }
+
+  .block_second {
+    width: 99%;
+  }
+
+  .block_items-second {
+    width: 45%;
+  }
+
+  .wrap-items {
+    width: 45%;
   }
 }
 
@@ -608,6 +648,16 @@ body {
   .container {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .block_three .middle {
+    margin-left: 30%;
+  }
+
+  .block_three .middleN {
+    margin-left: 25%;
   }
 }
 
@@ -669,6 +719,65 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .block {
+    padding: 40px 34px;
+  }
+
+  .block_three .middle {
+    margin-left: 18%;
+  }
+
+  .block_three .middleN {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 578px) {
+  .block {
+    padding: 40px 54px;
+  }
+
+  .block_body .items_title {
+    margin-right: 35px;
+  }
+
+  .block_body-second,
+  .block_body_tree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+
+  .block_items-second {
+    width: 80%;
+  }
+
+  .wrap-items {
+    width: 80%;
+  }
+
+  .block_three .middle {
+    margin-left: 30%;
+  }
+
+  .block_three .middleN {
+    margin-left: 26%;
+  }
+
+  .items-tree_first,
+  .items-tree_second {
+    width: 90%;
+  }
+
+  .items-tree_first + .items-tree_second {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 567px) {
   .menu {
     margin-left: 20%;
@@ -697,5 +806,17 @@ body {
 
   .select {
     margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .block {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 437px) {
+  .block_body .items_title {
+    margin-right: 15px;
   }
 }
