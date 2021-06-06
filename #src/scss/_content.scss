@@ -1,0 +1,144 @@
+.content_box {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+}
+
+.block_size {
+   max-width: 648px;
+   margin-bottom: 24px;
+}
+
+.block_body {
+   display: flex;
+
+   .items_title {
+      margin-right: 45px;
+   }
+}
+
+.block_first {
+   width: 49%;
+   margin-right: 24px;
+}
+
+.block_items {
+   .block_item {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 15px;
+   }
+}
+
+.items_descriptions {
+   .item_cash {
+      color: green;
+      font-size: 20px;
+   }
+
+   .item_label {
+      color: $white_color;
+      background: $active_color;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 3px 9px 3px 9px;
+      display: inline-block;
+      position: relative;
+      margin-left: 10px;
+
+      &::after {
+         right: 100%;
+         top: 50%;
+         border: solid transparent;
+         content: "";
+         height: 0;
+         width: 0;
+         position: absolute;
+         pointer-events: none;
+         border-right-color: $active_color;
+         border-width: 12px;
+         margin-top: -12px;
+      }
+   }
+
+   .item_tag {
+      border: 1px solid #6F68C6;
+      border-radius: 15px;
+      padding: 3px 7px;
+      width: 110px
+   }
+
+   .item_status {
+      color: $red_color;
+   }
+
+   .item_team {
+      margin-bottom: 24px;
+   }
+
+}
+
+.block_second {
+   width: 49%;
+}
+
+.block_body-second,
+.block_body_tree {
+
+   .block_items {
+      font-weight: 700;
+
+      .block_item:not(:last-child) {
+         border-bottom: $border;
+      }
+   }
+
+   .subtitle {
+      color: $subtitle_color;
+      border-bottom: none !important;
+   }
+
+   .inner_list {
+      font-weight: 400;
+      padding-left: 15px;
+      padding-top: 10px;
+   }
+}
+
+.right {
+   float: right;
+}
+
+.block_items-second {
+   width: 250px;
+}
+
+.wrap-items {
+   width: 250px;
+   margin-left: 40px;
+}
+
+.block_three {
+   flex-grow: 1;
+
+   .middle {
+      margin-left: 40%;
+   }
+
+   .middleN {
+      margin-left: 38%;
+   }
+}
+
+.items-tree_first,
+.items-tree_second {
+   width: 49%;
+}
+
+.items-tree_first+.items-tree_second {
+   margin-left: 20px;
+}
+
+.cut_height {
+   height: 606px;
+}

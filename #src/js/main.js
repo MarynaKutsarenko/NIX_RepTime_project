@@ -14,6 +14,29 @@
    })
 }());
 
+
+(function () {
+   const checkbox = document.querySelector('.checkbox');
+   const blockThree = document.querySelector('.block_three');
+   const blockFirst = document.querySelector('.block_first');
+   const blockSecond = document.querySelector('.block_second');
+
+   checkbox.addEventListener('click', function () {
+      if (this.checked) {
+         blockThree.style.display = 'block';
+         blockFirst.classList.add('scroll');
+         blockSecond.classList.add('cut_height');
+      } else {
+         blockThree.style.display = 'none';
+         blockFirst.classList.remove('scroll');
+         blockSecond.classList.remove('cut_height');
+      }
+   })
+}())
+
+
+
+
 // let checkbox = document.querySelector('.filter-checkbox');
 
 // checkbox.addEventListener('change', function () {

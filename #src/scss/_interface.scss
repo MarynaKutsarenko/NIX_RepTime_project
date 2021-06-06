@@ -115,3 +115,54 @@ body {
    background: $active_color;
    margin-right: 24px;
 }
+
+.title {
+   text-align: center;
+   color: #fff;
+   margin-bottom: 24px;
+}
+
+.block {
+   position: relative;
+   background: $box_bg;
+   border: $border;
+   border-radius: 7px;
+   padding: 40px 54px;
+
+
+   &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 7px;
+      height: 50%;
+      background: $main_gradient;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+   }
+
+}
+
+.scroll {
+   overflow-y: auto;
+   max-height: 606px;
+   scroll-snap-align: center;
+   scrollbar-color: $active_color;
+
+   &::-webkit-scrollbar {
+      width: 8px;
+      height: 100%;
+      scroll-snap-align: center;
+   }
+
+   &::-webkit-scrollbar-track {
+      border-radius: 7px;
+      background-clip: content-box;
+   }
+
+   &::-webkit-scrollbar-thumb:vertical {
+      border-radius: 7px;
+      background: $scroll_bg;
+   }
+}
