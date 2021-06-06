@@ -1,0 +1,122 @@
+.filter_row {
+   display: flex;
+   margin-bottom: 32px;
+   padding-top: 40px;
+
+   @media (max-width: 900px) {
+      flex-wrap: wrap;
+   }
+
+   @media (max-width: 465px) {
+      flex-direction: column;
+      padding-top: 20px;
+   }
+}
+
+.filter_first,
+.filter_second {
+   margin-right: 24px;
+}
+
+.select {
+   background: $box_bg;
+   color: $text_color;
+   border-radius: 7px;
+   width: 200px;
+   outline: none;
+   border: $border;
+   padding: 8px;
+   cursor: pointer;
+
+   @media (max-width: 465px) {
+      margin-bottom: 16px;
+   }
+}
+
+.filter_checkbox,
+.filter_buttons {
+   margin-top: auto;
+}
+
+.filter_checkbox {
+   margin-right: 24px;
+
+   .checkbox_label {
+      font-size: 14px;
+      line-height: 21px;
+      color: $text_color;
+   }
+
+   .checkbox {
+      display: none;
+   }
+
+   .ckeckboxFake {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      border: 1px solid #3D444E;
+      margin-right: 12px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+   }
+
+   .ckeckboxFake::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      display: block;
+      height: 20px;
+      width: 20px;
+      background-color: $active_color;
+      background-image: url("/img/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      transition: 0.2s;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+   }
+
+   .checkbox:checked+.ckeckboxFake::before {
+      opacity: 1;
+   }
+
+}
+
+.btn:hover {
+   background: $active_link-bg;
+   color: #fff;
+   padding: 10px 30px;
+   font-size: 16px;
+   margin-right: 15px;
+   transition: all 0.4s linear;
+   -webkit-transition: all 0.4s linear;
+   -moz-transition: all 0.4s linear;
+   -ms-transition: all 0.4s linear;
+   -o-transition: all 0.4s linear;
+}
+
+.filter_buttons {
+
+   @media (max-width: 900px) {
+      margin-top: 24px;
+   }
+}

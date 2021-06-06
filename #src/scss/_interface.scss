@@ -79,3 +79,39 @@ body {
       padding-right: 0;
    }
 }
+
+.subtitle {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 21px;
+   color: $subtitle_color;
+   margin-bottom: 8px;
+}
+
+.btn {
+   border-radius: 7px;
+   padding: 8px 28px;
+   font-size: 14px;
+   line-height: 21px;
+   cursor: pointer;
+   border: $btn_border;
+   background: inherit;
+   color: $active_color;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+
+   transition: all 0.4s linear;
+   -webkit-transition: all 0.4s linear;
+   -moz-transition: all 0.4s linear;
+   -ms-transition: all 0.4s linear;
+   -o-transition: all 0.4s linear;
+
+}
+
+.btn_active {
+   color: #fff;
+   background: $active_color;
+   margin-right: 24px;
+}

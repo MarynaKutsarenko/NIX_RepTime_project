@@ -1,36 +1,41 @@
-<section class="section">
+<section class="section_filter">
    <div class="container">
-      <div class="wrapp-content">
-         <div class="filter_group">
-            <div class="filter_group-dev">
-               <h4 class="title-sm">Dev</h4>
-               <select  id="sel-dev">
-                  <option value="1">Jenny Wilson</option>
-                  <option value="2">Jenny Wilson-2</option>
-                  <option value="3">Jenny Wilson-3</option>
+      <!-- <div class="wrapp-content"> -->
+         <div class="filter_row">
+
+            <div class="filter_first">
+               <h4 class="subtitle">Dev</h4>
+               <select  class="select">
+                  <option class="select_item">Jenny Wilson</option>
+                  <option class="select_item">Jenny Wilson2</option>
+                  <option class="select_item">Jenny Wilson3</option>
                </select>
             </div>
-            <div class="filter_group-status">
-               <h4 class="title-sm">Status</h4>
-               <select  id="sel-dev">
-                  <option value="Jenny">All Statuses</option>
-                  <option value="Jenny">in Progresss</option>
-                  <option value="Jenny">Done</option>
+
+            <div class="filter_second">
+               <h4 class="subtitle">Status</h4>
+               <select  class="select ">
+                  <option class="select_item">All Statuses</option>
+                  <option class="select_item">in Progresss</option>
+                  <option class="select_item">Done</option>
                </select>
             </div>
-            <div class="filter_group-checkbox">
-               <label class="filter-checkbox_l">
-                  <input type="checkbox" class="filter-checkbox" checked>
+
+            <div class="filter_checkbox">
+               <label class="checkbox_label">
+                  <input type="checkbox" class="checkbox" checked>
                   <span class="ckeckboxFake"></span>
                   Show Efficiency
                </label>
             </div>
-            <div class="filter_group-buttons">
-               <button class="btn btn_active">Apply</button>
-               <button class="btn">Reset Filters</button>
+
+            <div class="filter_buttons">
+               <button class="btn btn_hover btn_active">Apply</button>
+               <button class="btn btn_hover">Reset Filters</button>
             </div>
          </div>
-         <div class="content_box">
+
+         <!-- <div class="content_box">
             <div class="block block_information">
                <h3 class="title">Project information</h3>
                <div class="info_wrapper">
@@ -126,6 +131,7 @@
                </div>
             </div>
          </div>
-      </div>
+          -->
+      <!-- </div> -->
    </div>
 </section>

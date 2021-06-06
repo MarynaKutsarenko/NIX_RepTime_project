@@ -40,6 +40,8 @@
       right: 0;
       width: 200px;
       display: none;
+      background:#000;
+      z-index: 1;
    }
 
    .menu_item {
@@ -161,4 +163,8 @@
       background: rgba(143, 127, 255, 0.15);
       color: inherit;
    }
+}
+
+.clear {
+   clear: both;
 }
