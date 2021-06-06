@@ -542,6 +542,30 @@ body {
   height: 606px;
 }
 
+.table {
+  margin-bottom: 100px;
+  border-collapse: collapse;
+}
+
+.table_row {
+  background: #2D333D;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.table_column {
+  background-image: url("/img/sort.svg");
+  background-repeat: no-repeat;
+  width: 12%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+}
+
 @media (max-width: 1250px) {
   .menu_link {
     padding: 27px 30px 27px 25px;

@@ -1,7 +1,6 @@
 (function () {
    const menuBurger = document.querySelector('.menu_burger');
    const menuItems = document.querySelector('.menu_items');
-   const menuItem = document.querySelector('.menu_item');
 
    menuBurger.addEventListener('click', function () {
       if (this.classList.contains('menu_burger-active')) {
@@ -44,3 +43,10 @@ window.addEventListener("resize", function () {
    }
 }, false);
 
+const tableInit = (arr) => {
+   const temp = arr;
+
+   console.log(temp);
+}
+
+tableInit(reporting_info);
