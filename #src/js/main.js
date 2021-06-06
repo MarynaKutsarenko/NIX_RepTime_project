@@ -34,11 +34,13 @@
    })
 }())
 
+window.addEventListener("resize", function () {
+   const blockSecond = document.querySelector('.block_second');
+   
+   if (innerWidth <= 576) {
+      blockSecond.classList.add('scroll');
+   } else {
+      blockSecond.classList.remove('scroll');
+   }
+}, false);
 
-
-
-// let checkbox = document.querySelector('.filter-checkbox');
-
-// checkbox.addEventListener('change', function () {
-//    !checkbox.checked ? blockEfficiency.style.display = 'none' : blockEfficiency.style.display = 'block';
-// })

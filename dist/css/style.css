@@ -758,6 +758,7 @@ body {
 
   .wrap-items {
     width: 80%;
+    margin-left: 0;
   }
 
   .block_three .middle {
