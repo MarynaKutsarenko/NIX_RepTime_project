@@ -1,12 +1,52 @@
 .table {
    margin-bottom: 100px;
    border-collapse: collapse;
+   font-size: 14px;
+   font-weight: normal;
+   border-collapse: separate;
+   border-spacing: 0 10px;
+   height: 798px;
+   display: block;
+   position: relative;
+
+
+   #tableData {
+      .body_row {
+         background: $box_bg;
+         margin-right: 10px;
+         border-radius: 7px !important;
+         -webkit-border-radius: 7px !important;
+         -moz-border-radius: 7px !important;
+         -ms-border-radius: 7px !important;
+         -o-border-radius: 7px !important;
+
+         .body_column-first{
+            color: $active_color;
+            padding: 30px;
+            width: 160px;
+         }
+
+         .body_column {
+            padding: 10px;
+            height: 10px;
+            overflow: hidden;
+
+            &.tyteOfWork {
+               display: inline-block;
+               width: 20px;
+            }
+         }
+
+
+      }
+   }
 }
 
 .table_row {
    background: $table_head_bg;
    color: $table_head_color;
    border-radius: 7px;
+   height: 2rem;
    -webkit-border-radius: 7px;
    -moz-border-radius: 7px;
    -ms-border-radius: 7px;
@@ -14,10 +54,11 @@
 }
 
 .table_column {
-   background-image: url("/img/sort.svg"); 
+   background-image: url("/img/sort.svg");
    background-repeat: no-repeat;
-   width: 12%;
+   width: 15%;
    font-weight: 600;
    font-size: 12px;
    line-height: 17px;
+   text-align: center;
 }

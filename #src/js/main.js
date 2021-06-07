@@ -43,10 +43,33 @@ window.addEventListener("resize", function () {
    }
 }, false);
 
-const tableInit = (arr) => {
-   const temp = arr;
+   
+function createRow(elem) {
+   const row = document.createElement('tr');
+   row.classList.add('body_row');
 
-   console.log(temp);
+   row.innerHTML = `
+      <td class="body_column body_column-first">${elem.name}</td> 
+      <td class="body_column">${elem.developers}</td> 
+      <td class="body_column">${elem.workType}</td>
+      <td class="body_column">${elem.status}</td> 
+      <td class="body_column">${elem.estimation}</td>
+      <td class="body_column">${elem.totalTime}</td>
+      <td class="body_column">${elem.myTime}</td>
+      <td class="body_column">${elem.efficiency}</td>
+   `;
+
+   return row;
 }
 
-tableInit(reporting_info);
+const rowFromTable = (wrapper, arr) => {
+   wrapper.textContent = '';
+
+   arr.forEach((elem) => {
+      wrapper.append(createRow(elem))
+   })
+}
+
+window.onload = () => {
+   rowFromTable(document.getElementById('tableData'), reporting_info);
+}
