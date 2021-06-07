@@ -185,3 +185,18 @@ body {
       background: $scroll_bg;
    }
 }
+
+.copyright {
+   font-size: 12px;
+   line-height: 18px;
+   color: $white_color;
+   text-align: center;
+
+   .text{
+      color: $active_color;
+   }
+}
+
+.footer{
+   padding: 20px;
+}

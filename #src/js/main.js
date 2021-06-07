@@ -62,14 +62,12 @@ function createRow(elem) {
    return row;
 }
 
-const rowFromTable = (wrapper, arr) => {
-   wrapper.textContent = '';
+const rowFromTable = (tableBody, arr) => {
+   tableBody.textContent = '';
 
-   arr.forEach((elem) => {
-      wrapper.append(createRow(elem))
+   arr.forEach((row) => {
+      tableBody.append(createRow(row))
    })
 }
 
-window.onload = () => {
-   rowFromTable(document.getElementById('tableData'), reporting_info);
-}
+rowFromTable(document.getElementById('tableData'), reporting_info);

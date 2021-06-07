@@ -9,49 +9,45 @@
 </head>
 <body>
    <header class="header">
-   <div class="header_body ">
-      <div class="container">
+   <div class="container">
 
-         <div class="logo">
-            <a href="#" class="logo_link ">
-               <img src="/img/logo.svg" alt="logo: employee time reporting" class="logo_img" />
-            </a>
-         </div>
-
-         <nav class="menu">
-            <div class="menu_burger"></div>
-
-            <ul class="menu_items">
-               <li class="menu_item item_Summary">
-                  <a href="#" class="menu_link">Summary</a>
-               </li>
-               <li class="menu_item  item_Hours">
-                  <a href="#" class="menu_link">Hours</a>
-               </li>
-               <li class="menu_item item_Projects">
-                  <a href="#" class="menu_link menu_link-active">Projects</a>
-               </li>
-               <li class="menu_item  item_Time">
-                  <a href="#" class="menu_link">Time&nbsp;reports</a>
-               </li>
-               <li class="menu_item  item_Confirm">
-                  <a href="#" class="menu_link">Confirmation</a>
-               </li>
-               <li class="menu_item  item_Mail">
-                  <a href="#" class="menu_link">Mailer</a>
-               </li>
-               <li class="menu_item  item_Compare">
-                  <a href="#" class="menu_link">Compare</a>
-               </li>
-            </ul>
-         </nav>
+      <div class="logo">
+         <a href="#" class="logo_link ">
+            <img src="/img/logo.svg" alt="logo: employee time reporting" class="logo_img" />
+         </a>
       </div>
 
+      <nav class="menu">
+         <div class="menu_burger"></div>
+
+         <ul class="menu_items">
+            <li class="menu_item item_Summary">
+               <a href="#" class="menu_link">Summary</a>
+            </li>
+            <li class="menu_item  item_Hours">
+               <a href="#" class="menu_link">Hours</a>
+            </li>
+            <li class="menu_item item_Projects">
+               <a href="#" class="menu_link menu_link-active">Projects</a>
+            </li>
+            <li class="menu_item  item_Time">
+               <a href="#" class="menu_link">Time&nbsp;reports</a>
+            </li>
+            <li class="menu_item  item_Confirm">
+               <a href="#" class="menu_link">Confirmation</a>
+            </li>
+            <li class="menu_item  item_Mail">
+               <a href="#" class="menu_link">Mailer</a>
+            </li>
+            <li class="menu_item  item_Compare">
+               <a href="#" class="menu_link">Compare</a>
+            </li>
+         </ul>
+      </nav>
    </div>
 
 </header>
 <br class="clear">
-
    <section class="section_filter">
    <div class="container">
       <div class="filter_row">
@@ -198,7 +194,8 @@
 </section>
    <section class="table ">
    <div class="container">
-      <div class="table-wrap scroll">   
+
+      <div class="scroll">   
          <table class="table">
             <head class="table_head ">
                <tr class="table_row">
@@ -217,8 +214,36 @@
 
          </table>
       </div>
+
+      <div class="control">
+         <span class="control_text">Rows per page</span>
+         <select class="select select_small">
+            <option class="select_item" value="1">1</option>
+            <option class="select_item" value="2">2</option>
+            <option class="select_item" value="3">3</option>
+            <option class="select_item" value="4">4</option>
+            <option class="select_item" value="5">5</option>
+            <option class="select_item" value="6">6</option>
+            <option class="select_item" value="7">7</option>
+            <option class="select_item" value="8">8</option>
+            <option class="select_item" value="9">9</option>
+            <option class="select_item" value="10" selected>10</option>
+         </select>
+         <span class="control_text">1-10 of 20</span>
+         <span class="pagination select">
+            <a href="#">&laquo;</a>
+            <a class="pagination_item active" href="#">1</a>
+            <a class="pagination_item" href="#">2</a>
+            <a href="#">&raquo;</a>
+         </>
+      </div>
    </div>
 </section>
+   <foter class="footer">
+   <div class="container">
+      <p class="copyright">2012-2020 © CMS Department of<span class="text"> NIX Solutions Ltd</span>.</p>
+   </div>
+</foter>
 
    <script defer src="/js/temp_obj.min.js" module></script>
    <script defer src="/js/main.min.js" module></script>
