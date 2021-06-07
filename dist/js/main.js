@@ -50,7 +50,7 @@ function createRow(elem) {
 
    row.innerHTML = `
       <td class="body_column body_column-first">${elem.name}</td> 
-      <td class="body_column">${elem.developers}</td> 
+      <td class="body_column extra">${elem.developers}</td> 
       <td class="body_column">${elem.workType}</td>
       <td class="body_column">${elem.status}</td> 
       <td class="body_column">${elem.estimation}</td>

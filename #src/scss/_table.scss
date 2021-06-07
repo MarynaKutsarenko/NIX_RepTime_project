@@ -20,25 +20,27 @@
          -ms-border-radius: 7px !important;
          -o-border-radius: 7px !important;
 
-         .body_column-first{
+         .body_column-first {
             color: $active_color;
-            padding: 30px;
-            width: 160px;
+            width: 200px;
+            display: block;
+            text-align: center;
          }
 
          .body_column {
-            padding: 10px;
-            height: 10px;
-            overflow: hidden;
+            padding: 10px 5px;
 
-            &.tyteOfWork {
-               display: inline-block;
-               width: 20px;
+            +.extra {
+               -webkit-background-clip: text;
+               background-clip: text;
             }
          }
 
-
+         &:nth-child(even) {
+            background: $table_bg_dark;
+         }
       }
+
    }
 }
 
@@ -46,7 +48,7 @@
    background: $table_head_bg;
    color: $table_head_color;
    border-radius: 7px;
-   height: 2rem;
+   height: 1rem;
    -webkit-border-radius: 7px;
    -moz-border-radius: 7px;
    -ms-border-radius: 7px;
@@ -54,11 +56,13 @@
 }
 
 .table_column {
-   background-image: url("/img/sort.svg");
-   background-repeat: no-repeat;
-   width: 15%;
+   width: 12%;
    font-weight: 600;
    font-size: 12px;
    line-height: 17px;
    text-align: center;
+
+   +.tyteOfWork {
+      width: 15%;
+   }
 }
